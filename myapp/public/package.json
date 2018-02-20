@@ -1,0 +1,22 @@
+{
+  "name": "mean-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "browserify": "mkdir -p js/dist; browserify js/app.controller.js -o js/dist/app.js --debug"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "browserify-ng-html2js": "^1.3.0",
+    "watchify": "^3.10.0"
+  },
+  "dependencies": {
+    "angular": "1.5.3",
+    "underscore": "1.8.3"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-ng-html2js"
+    ]
+  },
+  "author": "Kyle Duhaime"
+}
